@@ -172,6 +172,4 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " => Airline Theme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:airline_theme='molokai'
-
-set encoding=utf8
-set guifont=icomoon:h11
+let g:airline_powerline_fonts = 1
