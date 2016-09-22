@@ -152,6 +152,9 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
+" nasm
+let g:syntastic_asm_checkers = ['nasm']
+
 " Custom CoffeeScript SyntasticCheck
 func! SyntasticCheckCoffeescript()
     let l:filename = substitute(expand("%:p"), '\(\w\+\)\.coffee', '.coffee.\1.js', '')
@@ -173,3 +176,10 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:airline_theme='molokai'
 let g:airline_powerline_fonts = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-color-solarised
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable
+set background=dark
+colorscheme solarized

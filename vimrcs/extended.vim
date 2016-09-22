@@ -31,7 +31,6 @@ set guioptions-=L
 set background=dark
 colorscheme peaksea
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

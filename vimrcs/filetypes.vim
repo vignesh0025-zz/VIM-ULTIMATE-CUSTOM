@@ -62,6 +62,6 @@ au FileType gitcommit call setpos('.', [0, 1, 1, 0])
 """"""""""""""""""""""""""""""
 " => Shell section
 """"""""""""""""""""""""""""""
-if exists('$TMUX') 
-    set term=screen-256color 
-endif
+"if exists('$TMUX') 
+"    set term=screen-256color 
+"endif
