@@ -14,14 +14,14 @@ if has("mac") || has("macunix")
 elseif has("win16") || has("win32")
     set gfn=Hack:h14,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
 elseif has("gui_gtk2")
-    set gfn=Inconsolata\ 11
+    set gfn=Monospace 
 elseif has("linux")
     set gfn=Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
 elseif has("unix")
     set gfn=Monospace\ 11
 endif
 
-"Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
+"Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11 \Inconsolata\ 12
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
 set guioptions-=r
 set guioptions-=R
@@ -29,8 +29,8 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-set background=dark
-colorscheme peaksea
+" set background=dark
+" colorscheme peaksea
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
