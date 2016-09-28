@@ -23,6 +23,7 @@ let g:airline_powerline_fonts = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-color-solarised
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:solarized_termcolors=256
 syntax enable
 set background=dark
 colorscheme solarized
