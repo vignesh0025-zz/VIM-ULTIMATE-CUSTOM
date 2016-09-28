@@ -28,3 +28,24 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+let g:lightline = {
+    \ 'component': {
+    \   'lineinfo': ' %3l:%-2v',
+    \ },
+    \ 'component_function': {
+    \   'readonly': 'LightLineReadonly',
+    \   'fugitive': 'LightLineFugitive'
+    \ },
+    \ 'separator': { 'left': '', 'right': '' },
+    \ 'subseparator': { 'left': '', 'right': '' }
+    \ }
+function! LightLineReadonly()
+    return &readonly ? '' : ''
+endfunction
+function! LightLineFugitive()
+    if exists('*fugitive#head')
+        let branch = fugitive#head()
+        return branch !=# '' ? ''.branch : ''
+    endif
+    return ''
+endfunction
