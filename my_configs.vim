@@ -1,8 +1,7 @@
 set cmdheight=1
 nmap <leader>q :q<cr>
 
-set gfn=Monospace
-
+set gfn=SauceCodePro\ Nerd\ Font\ Medium\ 11
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -23,7 +22,10 @@ let g:airline_powerline_fonts = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-color-solarised
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:solarized_termcolors=256
+if has("mac") || has("macunix")
+    let g:solarized_termcolors=256
+endif
+
 syntax enable
 set background=dark
 colorscheme solarized
